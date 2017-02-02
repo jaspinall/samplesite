@@ -1,0 +1,459 @@
+html {
+  box-sizing: border-box;
+  font-family: "DINPro", Arial, sans-serif;
+  background-color: #ffffff;
+  font-size: 20px;
+  font-weight: 200;
+  text-align: center;
+}
+
+body, ul, p {
+  margin: 0;
+  padding: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1, h2, h3, h4 {
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+button {
+  color: #ff5e48;
+  font-size: 1em;
+  font-weight: 600;
+  width: 250px;
+  height: 60px;
+  background-color: transparent;
+  border: 2px solid #ff5e48;
+  box-shadow: none;
+}
+
+/* mobile styling (<600px) */
+
+/* navbar styling */
+
+.topBanner {
+  color: white;
+  font-size: 0.6em;
+  background-color: black;
+  width: 100vw;
+  height: 60px;
+  padding: 10px 5px 5px 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;;
+}
+
+.topBanner p {
+  font-weight: 200;
+}
+
+.topBanner a {
+  font-weight: 400;
+  text-decoration: underline;
+  color: white;
+}
+
+.tbDesktop {
+  display: none;
+}
+
+nav {
+  width: 100vw;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 30px;
+}
+
+nav a {
+  color: black;
+}
+
+.mobileMenuImage, .boxImage {
+  width: 35px;
+}
+
+.logoImage {
+  width: 50px;
+}
+
+.menuDesktop {
+  display: none;
+}
+
+.mobileMenu {
+  position: absolute;
+  top: 85px;
+  transform: translateY(-150%);
+  transition:
+    transform 0.5s cubic-bezier(0.51, 0.1, 0.11, 0.97);
+  height: 250px;
+  width: 100vw;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu li {
+  text-align: center;
+  flex-grow: 1;
+  margin: 0 0 auto;
+}
+
+.login {
+  display: none;
+}
+
+.mail {
+  display: flex;
+}
+
+/* main section */
+
+.desktopMain {
+  display: none;
+}
+
+.mobileMain {
+  height: calc(100vh - 160px);
+  background-image: url('imgs/main/download.jpg');
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.mobileMain h1 {
+  font-size: 2.4em;
+  font-weight: 500;
+  margin-bottom: 100px;
+}
+
+/* steps section */
+
+.steps {
+  padding: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.steps h2 {
+  margin: 30px;
+}
+
+.step {
+  width: 250px;
+  height: 250px;
+  background-size: 80%;
+  background-repeat: no-repeat;
+  background-position: right;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+}
+
+.step1 {
+  background-image: url('imgs/steps/01.png');
+}
+
+.step2 {
+  background-image: url('imgs/steps/02.png');
+}
+
+.step3 {
+  background-image: url('imgs/steps/03.png');
+}
+
+.title {
+  margin-top: 20px;
+  font-weight: 500;
+  border-bottom: 1px solid black;
+  margin-right: 20px;
+}
+
+.step p {
+  width: 50%;
+}
+
+.steps button {
+  margin-bottom: 50px;
+}
+
+/* juice section */
+.juice {
+  height: 100vh;
+}
+
+.desktopJuice {
+  display: none;
+}
+
+.mobileJuice {
+  height: 100%;
+  background-image: url('imgs/juice/juiceMobile.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.juice h1 {
+  font-size: 2.4em;
+  font-weight: 500;
+  margin-bottom: 50px;
+}
+
+.divider {
+  width: 50px;
+  height: 5px;
+  border-bottom: 3px solid #ff5e48;;
+}
+
+.juice h3 {
+  margin-top: 50px;
+  font-size: 1.7em;
+  margin-bottom: 150px;
+}
+
+/* juice types */
+.juiceTypes {
+  padding: 40px 20px;
+}
+
+.desktopJuiceTypes {
+  display: none;
+}
+
+.mobileJuiceTypes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.juiceTypes h3 {
+  margin-top: 20px;
+  font-size: 1.7em;
+  margin-bottom: 30px;
+}
+
+.juiceTypes p {
+  margin: 20px;
+}
+
+.drinkTypes {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 30px;
+}
+
+.drinkUnit {
+  width: 40vw;
+}
+
+.drinkUnit img {
+  width: 40vw;
+}
+
+.drinkLink {
+  color: #ff5e48;
+  padding: 20px 0;
+  font-size: 0.9em;
+  font-weight: 500;
+}
+
+.juiceTypes button {
+  margin-bottom: 50px;
+}
+
+
+/* Desktop display */
+
+@media screen and (min-width : 600px) {
+
+
+/* nav styling */
+
+.topBanner {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.8em;
+}
+
+.tbDesktop {
+  display: inline;
+  padding-right: 5px;
+}
+
+.tbMobile {
+  display: none;
+}
+
+.mobileMenuImage {
+  display: none;
+}
+
+.logoImage {
+  width: 350px;
+}
+
+nav {
+  display: flex;
+}
+
+.login {
+  display: inline;
+  font-size: 0.7em;
+}
+
+.menuDesktop {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.menuItem {
+  font-size: 0.75em;
+  padding: 20px;
+}
+
+/* main styling */
+.mobileMain {
+  display: none;
+}
+
+.desktopMain {
+  height: calc(100vh - 160px);
+  background-image: url('imgs/main/juiceMain.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.desktopMain h1 {
+  font-size: 2.4em;
+  font-weight: 500;
+  margin: 10px;
+}
+
+.desktopMain p {
+  margin: 40px;
+  width: 50%;
+}
+
+/* steps */
+
+.steps {
+  height: 100vh;
+}
+
+.steps p {
+  width: 600px;
+}
+
+.numbers {
+  width: 80vw;
+  padding: 25px;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.step {
+  width: 20vw;
+  margin: 5vw;
+}
+
+.step1 {
+  background-size: 70%;
+}
+
+/* juice */
+.mobileJuice {
+  display: none;
+}
+
+.juice h3 {
+  margin-bottom: 20px;
+}
+
+.juice p {
+  width: 40%;
+  margin-bottom: 50px;
+}
+
+.desktopJuice {
+  height: 100%;
+  background-image: url('imgs/juice/juiceDesktop.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* juiceTypes */
+.juiceTypes {
+  height: 100vh;
+}
+
+.mobileJuiceTypes {
+  display: none;
+}
+
+.desktopJuiceTypes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.desktopJuiceTypes p {
+  width: 400px;
+}
+
+.drinkUnit {
+  width: 20vw;
+}
+
+.drinkUnit img {
+  width: 20vw;
+}
+
+.drinkLink {
+  display: none;
+}
